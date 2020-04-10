@@ -3,14 +3,14 @@
 <head>
     <style>
         body {
-            background-image: url("img/mainpage_bg.png");
-            background-repeat: no-repeat;
-            background-size: cover;
+            background-image: url("img/mainbg.png");
             font-family: 'Noto Sans', sans-serif;
             text-align: center;
-            position: relative;
-            width: 1440px;
-            height: 900px;
+            overflow: hidden;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-background-size: cover;
         }
 
         button {
@@ -75,8 +75,8 @@
             position: absolute;
             width: 333px;
             height: 103px;
-            left: 981px;
-            top: 683px;
+            right: 126px;
+            bottom: 114px;
 
             border: 7px solid #D2B3F9;
             box-sizing: border-box;
@@ -87,17 +87,69 @@
             font-style: normal;
             font-weight: bold;
             font-size: 48px;
-            /* identical to box height, or 217% */
 
             text-align: center;
-
+            z-index: 10;
             color: #D2B3F9;
+        }
+
+        @media (min-width: 1281px) {}
+
+        @media (min-width: 1025px) and (max-width: 1280px) {}
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            #moon {
+                display: block;
+                margin: 0px auto;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+        @media (min-width: 481px) and (max-width: 767px) {}
+
+        @media (min-width: 320px) and (max-width: 480px) {
+            a button {
+                text-align: center;
+                font-size: 24px;
+            }
+
+            .forum {
+                bottom: 322px;
+            }
+
+            .mypage {
+                bottom: 260px;
+            }
+
+            .signin {
+                bottom: 198px;
+            }
+
+            .daggu {
+                text-align: center;
+                bottom: 63px;
+            }
+
+            #moon {
+                display: block;
+                margin: 0px auto;
+            }
+        }
+
+        #moon {
+            position: absolute;
+            width: 514px;
+            height: 510px;
+            left: 176px;
+            top: 205px
         }
     </style>
     <link rel="stylesheet" href="css/reset.css">
 </head>
 
 <body>
+    <img src="img/moon.png" id="moon">
     <div class="buttons">
         <a href="forum.html"><button class="forum">FORUM</button></a>
         <a href="mypage.html"><button class="mypage">MY PAGE</button></a>
