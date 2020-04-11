@@ -18,3 +18,12 @@ body {
 .active a {
     color: #933DEA !important;
 }
+
+/* 왼쪽 화살표 */
+.leftArrow{
+    float: left;
+} 
+/* 오른쪽 화살표 */
+.rightArrow{
+    float:right;
+}
