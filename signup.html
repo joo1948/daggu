@@ -2,44 +2,56 @@
 
 <head>
     <style>
+        img {
+            pointer-events: none;
+        }
+
         body {
-            background-image: url("img/signup_bg.png");
+            /*background-image: url("img/signup_bg.png");*/
             background-repeat: no-repeat;
             background-size: cover;
             font-family: 'Noto Sans', sans-serif;
             text-align: center;
-            width: 1440px;
-            height: 900px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #botpic {
+            width: 355px;
+            height: 310px;
+            right: 0px;
+            bottom: 0px;
+            position: absolute;
+        }
+
+        #leftpic {
+            position: absolute;
+            left: 0px;
+            top: 201.77px;
         }
 
         .signup_container {
-            position: relative;
-            width: 483px;
-            /*화면 크기에 맞게 바꿀것*/
-            height: 770.01px;
-            left: 483px;
-            top: 59px;
-
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+            vertical-align: middle;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 710px;
+            margin: auto;
 
         }
 
         .title {
-            /*
-            position: absolute;
-            width: 182px;
-            height: 50px;
-            left: 629px;
-            top: 59px;
-            */
             font-family: 'Noto Sans KR', sans-serif;
             font-style: normal;
             font-weight: 900;
             font-size: 36px;
             line-height: 50px;
-            /* identical to box height, or 139% */
-
             text-align: center;
-
             color: #660EC0;
 
         }
@@ -103,11 +115,21 @@
             background: #933DEA;
             box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
         }
+
+
+        @media (min-width: 320px) and (max-width: 480px) {
+            #leftpic {
+                top: 300px
+            }
+
+        }
     </style>
     <link rel="stylesheet" href="css/reset.css">
 </head>
 
 <body>
+    <img src="img/test.png" id="leftpic">
+    <img src="img/000.png" id="botpic">
     <div class="signup_container">
         <form>
 
