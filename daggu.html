@@ -7,10 +7,20 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!--slick CDN-->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <link rel="stylesheet" href="css/daggu.css">
+    <script type="text/javascript" src="daggu.js"></script>
 </head>
 
 <body>
+
+    <div class="container">
+        <img src="img/다이어리커버1.png" width="1048px" height="536px">
+    </div>
     <div class="tap_wrap">
         <ul class="nav nav-tabs nav-justified">
             <li class="active"><a href="#maskingTape" data-toggle="tab">MASKING TAPE</a></li>
@@ -21,9 +31,37 @@
         </ul>
 
         <div class="tab-content">
-            <div class="tab-pane active" id="maskingTape" >
-                <p>home 부분입니다.</p>
-                
+            <div class="tab-pane active" id="maskingTape">
+                <!--슬라이드-->
+                <section class="center slider">
+                    <div>
+                        <img src="img/maskingTape/color.png">
+                    </div>
+                    <div>
+                        <img src="img/maskingTape/MLBB단색.png">
+                    </div>
+                    <div>
+                        <img src="img/maskingTape/New tro.png">
+                    </div>
+                    <div>
+                        <img src="img/maskingTape/QUESTION.png">
+                    </div>
+                    <div>
+                        <img src="img/maskingTape/universe.png">
+                    </div>
+                    <div>
+                        <img src="img/maskingTape/고구마단색s.png">
+                    </div>
+                    <div>
+                        <img src="img/maskingTape/WEEKDAY.png">
+                    </div>
+                    <div>
+                        <img src="img/maskingTape/남색바탕격자S.png">
+                    </div>
+                    <div>
+                        <img src="img/maskingTape/밤S.png">
+                    </div>
+                </section>
             </div>
             <div class="tab-pane" id="notePaper">
                 <p>tab2 부분입니다.</p>
@@ -37,21 +75,26 @@
             <div class="tab-pane" id="paper">
                 <p>tab5s 부분입니다.</p>
             </div>
-            
-            <!-- 왼쪽 오른쪽 화살표 -->
-            <img src="img/arrowL.png" id="arrowL" class="leftArrow" >
-            <img src="img/arrowR.png" id="arrowR" class="rightArrow" >
-
-
         </div>
     </div>
 
     <!-- 위쪽... -->
     <div>
         <!-- link main -->
-        <a href="main.html"><img src="img/arrow_back.png" id="arrowBack" class="backArrow" ></a>
+        <a href="main.html"><img src="img/arrow_back.png" id="arrowBack" class="backArrow"></a>
     </div>
-    
+    <script>
+        //슬라이드 jquery 
+        $(".center").slick({
+            dots: false,
+            infinite: true,
+            centerMode: true,
+            slidesToShow: 5,
+            arrows: true,
+            slidesToScroll: 5
+        });
+    </script>
+
 </body>
 
 </html>

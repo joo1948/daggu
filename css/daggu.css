@@ -19,13 +19,47 @@ body {
     color: #933DEA !important;
 }
 
-/* 왼쪽 화살표 */
-.leftArrow{
-    float: left;
-} 
-/* 오른쪽 화살표 */
-.rightArrow{
-    float:right;
+/*슬라이드 이미지*/
+.slick-slide img {
+    width: 100%;
 }
 
+.slider {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
 
+/*슬라이드 화살표 둘다*/
+.slick-arrow {
+    position: absolute;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+}
+
+/*슬라이드 왼쪽 화살표*/
+.slick-prev {
+    left: -45px;
+    top: 50%;
+    z-index: 10;
+    background-image: url("../img/arrowL.png");
+    background-size: 45px;
+    border: none;
+    background-color: #00ff0000;
+    font-size: 0;
+    color: transparent;
+}
+
+/*슬라이드 오른쪽 화살표*/
+.slick-next {
+    right: -45px;
+    top: 50%;
+    z-index: 10;
+    background-image: url("../img/arrowR.png");
+    background-size: 45px;
+    border: none;
+    background-color: #00ff0000;
+    font-size: 0;
+    color: transparent;
+}
